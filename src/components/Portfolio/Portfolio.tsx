@@ -3,13 +3,64 @@ import githubIcon from '../../assets/github-icon.svg'
 import externalLinkIcon from '../../assets/external-link-icon.svg'
 import ScrollAnimation from 'react-animate-on-scroll'
 
-const projects = [
+interface Project {
+	title: string
+	description: string
+	techs: string[]
+	github: string
+	externalLink?: string
+}
+
+const projects: Project[] = [
 	{
-		title: 'Em breve',
+		title: 'Coffee Delivery',
 		description:
-			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quia rerum delectus alias, asperiores incidunt? Voluptas veritatis debitis totam nostrum, doloremque quae ea obcaecati voluptatibus iste qui necessitatibus quo asperiores.',
-		techs: ['React', 'Typescript', 'Styled Components'],
-		github: '',
+			'Um e-commerce para vender variados tipos de cafés em que o usuário seleciona os cafés desejados, preenche seus dados pessoais e forma de pagamento, e confirma a compra, simulando que o pedido será entregue em sua casa.',
+		techs: ['React', 'Typescript', 'TailwindCSS', 'Unform'],
+		github: 'https://github.com/glsvitoria/ignite-react-2022-challenges',
+		externalLink: 'https://coffee-delivery-glsvitoria.vercel.app/',
+	},
+	{
+		title: 'ToDo List',
+		description:
+			'Um site para fazer a organização de demandas a se fazer no estilo todo-list, podendo adicionar itens pendendo, marcar eles como concluídos e remover depois.',
+		techs: ['React', 'Typescript', 'TailwindCSS', 'SASS'],
+		github:
+			'https://github.com/glsvitoria/ignite-react-2022-challenges/tree/main/Desafio%201%20-%20Praticando%20conceitos/pratice-concepts',
+		externalLink: 'https://todo-list-glsvitoria.vercel.app/',
+	},
+	{
+		title: 'Interest Destination',
+		description:
+			'Uma interface web para marcar Destinos de Interesse do usuário e fazer mapeamento de uma viagem, podendo adicionar e remover destinos.',
+		techs: ['React', 'Typescript', 'TailwindCSS', 'SASS'],
+		github: 'https://github.com/glsvitoria/prosel-ally',
+		externalLink: 'https://interest-destination.vercel.app/',
+	},
+	// Consertar o select do site
+	{
+		title: 'Interest Destination',
+		description:
+			'Uma interface web para marcar Destinos de Interesse do usuário e fazer mapeamento de uma viagem, podendo adicionar e remover destinos.',
+		techs: ['Next', 'Typescript', 'SASS', 'Prismic CMS'],
+		github: 'https://github.com/glsvitoria/blog-nextjs',
+		externalLink: 'https://ignite-reactjs-ifom.vercel.app/',
+	},
+	// Fazer README e colocar favicon
+	{
+		title: 'Pagamento Fornecedor',
+		description:
+			'Construção do FrontEnd de uma aplicação de gerenciamento de pagamento de contratos. Web site e Design.',
+		techs: ['React', 'TS', 'MirageJS', 'Unform', 'Figma'],
+		github: 'https://github.com/glsvitoria/prosel_vflows',
+		externalLink: 'https://prosel-vflows.vercel.app/',
+	},
+	{
+		title: 'Cápsula do Tempo',
+		description:
+			'Aplicação de recordação de memórias, onde o usuário poderá adicionar à uma timeline textos, fotos e vídeos de acontecimentos marcantes da sua vida, organizados por mês e ano.',
+		techs: ['Next', 'TS', 'ReactNative', 'Fastify', 'Prisma'],
+		github: 'https://github.com/glsvitoria/nlw-spacetime',
 	},
 ]
 
@@ -39,19 +90,24 @@ export function Portfolio() {
 								</svg>
 								<div className="project-links">
 									<a
-										href="https://github.com/LucasReisV1337"
+										href={project.github}
 										target="_blank"
 										rel="noreferrer"
 									>
 										<img src={githubIcon} alt="GitHub" />
 									</a>
-									<a
-										href="https://vercel.com/"
-										target="_blank"
-										rel="noreferrer"
-									>
-										<img src={externalLinkIcon} alt="Visitar site" />
-									</a>
+									{project.externalLink && (
+										<a
+											href={project.externalLink}
+											target="_blank"
+											rel="noreferrer"
+										>
+											<img
+												src={externalLinkIcon}
+												alt="Visitar site"
+											/>
+										</a>
+									)}
 								</div>
 							</header>
 
