@@ -37,13 +37,12 @@ const projects: Project[] = [
 		github: 'https://github.com/glsvitoria/prosel-ally',
 		externalLink: 'https://interest-destination.vercel.app/',
 	},
-	// Consertar o select do site
 	{
-		title: 'Interest Destination',
+		title: 'Space Travelling',
 		description:
 			'Uma interface web para marcar Destinos de Interesse do usuário e fazer mapeamento de uma viagem, podendo adicionar e remover destinos.',
 		techs: ['Next', 'Typescript', 'SASS', 'Prismic CMS'],
-		github: 'https://github.com/glsvitoria/blog-nextjs',
+		github: 'https://github.com/glsvitoria/space-travelling',
 		externalLink: 'https://ignite-reactjs-ifom.vercel.app/',
 	},
 	// Fazer README e colocar favicon
@@ -61,6 +60,13 @@ const projects: Project[] = [
 			'Aplicação de recordação de memórias, onde o usuário poderá adicionar à uma timeline textos, fotos e vídeos de acontecimentos marcantes da sua vida, organizados por mês e ano.',
 		techs: ['Next', 'TS', 'ReactNative', 'Fastify', 'Prisma'],
 		github: 'https://github.com/glsvitoria/nlw-spacetime',
+	},
+	{
+		title: 'Meteora',
+		description:
+			'E-commerce de uma loja de roupas chamada METEORA que possui produtos como: Camisetas, Bolsas, Calçados e entre outros.',
+		techs: ['React', 'TS', 'TailwindCSS', 'Swiper'],
+		github: 'https://github.com/glsvitoria/meteora',
 	},
 ]
 
