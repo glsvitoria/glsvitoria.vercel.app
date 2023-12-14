@@ -29,11 +29,10 @@ export function About() {
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000}>
           <p>
-            Me chamo Guilherme Vitória, sou um desenvolvedor que ama poder
-            programar. Sou apaixonado em poder desenvolver e criar soluções que
-            possam impactar na vida as pessoas e de alguma forma poder
-            facilita-lás. Aprimoro minhas habilidades dia após dia no FrontEnd
-            Web / Mobile e também na área do Design.
+            Me chamo Guilherme Vitória, sou Desenvolvedor FullStack com foco em
+            FrontEnd que ama poder programar. Sou apaixonado em poder
+            desenvolver e criar soluções que possam impactar na vida as pessoas
+            e de alguma forma poder facilita-lás. Adoro fazer projetos pessoas focados em resolver problemas do dia.
           </p>
         </ScrollAnimation>
         <ScrollAnimation
@@ -43,7 +42,7 @@ export function About() {
         >
           <p>
             Desenvolvo sites e aplicações utilizando tecnologias como React,
-            Next e React Native. Me desafio todos os dias com as ideias que
+            Next, React Native, Fastify e Express. Me desafio todos os dias com as ideias que
             chegam e precisam ser convertidas em soluções tecnológicas. A cada
             novo projeto, é mais um passo dado na minha evolução.
           </p>
