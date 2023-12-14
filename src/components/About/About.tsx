@@ -1,13 +1,21 @@
 import { Container } from "./styles";
 
-import cssIcon from "../../assets/abilities/css-icon.svg";
-import htmlIcon from "../../assets/abilities/html-icon.svg";
-import jsIcon from "../../assets/abilities/js-icon.svg";
-import figmaIcon from "../../assets/abilities/figma-icon.svg";
-import reactIcon from "../../assets/abilities/react-icon.svg";
-import typescriptIcon from "../../assets/abilities/typescript-icon.svg";
-import tailwindIcon from "../../assets/abilities/tailwind-icon.svg";
-import nextIcon from "../../assets/abilities/nextjs-icon.svg";
+import reactIcon from "../../assets/abilities/react.svg";
+import awsIcon from "../../assets/abilities/aws.svg";
+import cssIcon from "../../assets/abilities/css.svg";
+import dockerIcon from "../../assets/abilities/docker.svg";
+import expressIcon from "../../assets/abilities/express.svg";
+import figmaIcon from "../../assets/abilities/figma.svg";
+import gitIcon from "../../assets/abilities/git.svg";
+import githubIcon from "../../assets/abilities/github.svg";
+import htmlIcon from "../../assets/abilities/html.svg";
+import javascriptIcon from "../../assets/abilities/javascript.svg";
+import nextIcon from "../../assets/abilities/next.svg";
+import nodejsIcon from "../../assets/abilities/nodejs.svg";
+import postgresIcon from "../../assets/abilities/postgres.svg";
+import prismaIcon from "../../assets/abilities/prisma.svg";
+import tailwindIcon from "../../assets/abilities/tailwind.svg";
+import typescriptIcon from "../../assets/abilities/typescript.svg";
 import image from "../../assets/image.svg";
 
 import ScrollAnimation from "react-animate-on-scroll";
@@ -55,139 +63,91 @@ export function About() {
         <div className="hard-skills">
           <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.1 * 1000}>
-              <img
-                src="https://skillicons.dev/icons?i=react&theme=dark"
-                alt="React"
-              />
+              <img src={reactIcon} alt="React" />
             </ScrollAnimation>
           </div>
 
           <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.3 * 1000}>
-              <img
-                src="https://skillicons.dev/icons?i=nextjs&theme=dark"
-                alt="Next"
-              />
+              <img src={nextIcon} alt="Next" />
             </ScrollAnimation>
           </div>
 
           <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.4 * 1000}>
-              <img
-                src="https://skillicons.dev/icons?i=tailwind&theme=dark"
-                alt="Node"
-              />
+              <img src={tailwindIcon} alt="Tailwind" />
             </ScrollAnimation>
           </div>
 
           <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.5 * 1000}>
-              <img
-                src="https://skillicons.dev/icons?i=ts&theme=dark"
-                alt="Typescript"
-              />
+              <img src={typescriptIcon} alt="Typescript" />
             </ScrollAnimation>
           </div>
 
           <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.7 * 1000}>
-              <img
-                src="https://skillicons.dev/icons?i=html&theme=dark"
-                alt="Html"
-              />
+              <img src={htmlIcon} alt="Html" />
             </ScrollAnimation>
           </div>
 
           <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.8 * 1000}>
-              <img
-                src="https://skillicons.dev/icons?i=css&theme=dark"
-                alt="Css"
-              />
+              <img src={cssIcon} alt="Css" />
             </ScrollAnimation>
           </div>
 
           <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}>
-              <img
-                src="https://skillicons.dev/icons?i=js&theme=dark"
-                alt="JavaScript"
-              />
+              <img src={javascriptIcon} alt="JavaScript" />
             </ScrollAnimation>
           </div>
 
           <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.2 * 1000}>
-              <img
-                src="https://skillicons.dev/icons?i=figma&theme=dark"
-                alt="Figma"
-              />
+              <img src={figmaIcon} alt="Figma" />
             </ScrollAnimation>
           </div>
 
           <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.7 * 1000}>
-              <img
-                src="https://skillicons.dev/icons?i=nodejs&theme=dark"
-                alt="NodeJS"
-              />
+              <img src={nodejsIcon} alt="NodeJS" />
             </ScrollAnimation>
           </div>
 
           <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.7 * 1000}>
-              <img
-                src="https://skillicons.dev/icons?i=express&theme=dark"
-                alt="Express"
-              />
+              <img src={expressIcon} alt="Express" />
             </ScrollAnimation>
           </div>
           <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.7 * 1000}>
-              <img
-                src="https://skillicons.dev/icons?i=prisma&theme=dark"
-                alt="Prisma"
-              />
+              <img src={prismaIcon} alt="Prisma" />
             </ScrollAnimation>
           </div>
           <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.7 * 1000}>
-              <img
-                src="https://skillicons.dev/icons?i=docker&theme=dark"
-                alt="Docker"
-              />
+              <img src={dockerIcon} alt="Docker" />
             </ScrollAnimation>
           </div>
           <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.7 * 1000}>
-              <img
-                src="https://skillicons.dev/icons?i=aws&theme=dark"
-                alt="Aws"
-              />
+              <img src={awsIcon} alt="Aws" />
             </ScrollAnimation>
           </div>
           <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.7 * 1000}>
-              <img
-                src="https://skillicons.dev/icons?i=github&theme=dark"
-                alt="Github"
-              />
+              <img src={githubIcon} alt="Github" />
             </ScrollAnimation>
           </div>
           <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.7 * 1000}>
-              <img
-                src="https://skillicons.dev/icons?i=git&theme=dark"
-                alt="Git"
-              />
+              <img src={gitIcon} alt="Git" />
             </ScrollAnimation>
           </div>
           <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.7 * 1000}>
-              <img
-                src="https://skillicons.dev/icons?i=postgres&theme=dark"
-                alt="Postgress"
-              />
+              <img src={postgresIcon} alt="Postgres" />
             </ScrollAnimation>
           </div>
         </div>
