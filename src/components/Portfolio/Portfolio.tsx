@@ -1,7 +1,8 @@
 import { Container } from "./styles";
-import githubIcon from "../../assets/github-icon.svg";
 import externalLinkIcon from "../../assets/external-link-icon.svg";
 import ScrollAnimation from "react-animate-on-scroll";
+import { GithubLogo } from "@phosphor-icons/react";
+import { ArrowSquareOut } from "@phosphor-icons/react/dist/ssr";
 
 interface Project {
   title: string;
@@ -171,7 +172,7 @@ export function Portfolio() {
                 </svg>
                 <div className="project-links">
                   <a href={project.github} target="_blank" rel="noreferrer">
-                    <img src={githubIcon} alt="GitHub" />
+                    <GithubLogo size={32} color="#FFF" />
                   </a>
                   {project.externalLink && (
                     <a
@@ -179,7 +180,7 @@ export function Portfolio() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <img src={externalLinkIcon} alt="Visitar site" />
+                      <ArrowSquareOut size={32} color="#FFF" />
                     </a>
                   )}
                 </div>

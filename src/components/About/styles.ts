@@ -19,7 +19,7 @@ export const Container = styled.section`
     align-items: center;
 
     img{
-      width: 3.4rem;
+      width: 4.2rem;
     }
   }
 
