@@ -1,5 +1,4 @@
 import { Container } from "./styles";
-import externalLinkIcon from "../../assets/external-link-icon.svg";
 import ScrollAnimation from "react-animate-on-scroll";
 import { GithubLogo } from "@phosphor-icons/react";
 import { ArrowSquareOut } from "@phosphor-icons/react/dist/ssr";
@@ -8,25 +7,38 @@ interface Project {
   title: string;
   description: string;
   techs: string[];
-  github: string;
+  github?: string;
   externalLink?: string;
 }
 
 const projects: Project[] = [
   {
-    title: "Fit Frame Back",
+    title: "Site da Blue",
     description:
-      "Uma aplicação para gerenciar treinos de musculação com o objetivo de fazer a manutenção e visualização da evolução de pesos do usuário. O usuário pode criar treinos, exercícios e séries, e também pode visualizar o histórico de treinos e exercícios.",
-    techs: ["Fastify", "Prisma", "Typescript", "Vitest", "JWT"],
-    github: "https://github.com/glsvitoria/gymapp-back",
+      "Site principal do plano de saúde Blue, com informações sobre o plano, rede credenciada, produtos, empresas parceiras e outras informações importantes para os clientes.",
+    techs: ["Next", "TS", "Tailwind", "ShadCN", "FramerMotion"],
+    externalLink: "https://www.saudeblue.com/"
+  },
+  {
+    title: "Seja um Corretor",
+    description:
+      "Site destinado ao cadastro de novos corretores junto com a Blue. Explicação breve sobre a Blue, o porque escolher a Blue, benefícios de ser um corretor, e formulário de cadastro.",
+    techs: ["Next", "TS", "MUI", "React Hook Form", "Zod"],
+    externalLink: "https://bluenacional.com/"
+  },
+  {
+    title: "Rede Credenciada",
+    description:
+      "Site da Rede Credenciada da Blue, com informações sobre a rede, busca de médicos, hospitais, laboratórios e outros prestadores de serviço.",
+    techs: ["Next", "TS", "MUI", "Playwright", "Zustand"],
+    externalLink: "https://rede.bluenacional.com/"
   },
   {
     title: "API Gym Checkin",
     description:
       "Uma API para gerenciar checkins de alunos em uma academia, com autenticação JWT, trabalhando a partir de use cases, utilizando patterns como Repository, SOLID, Factory, entre outros. Também foram implementados testes unitários e de integração.",
     techs: ["Fastify", "Prisma", "Typescript", "Vitest", "JWT"],
-    github: "https://github.com/glsvitoria/ignite-react-2022-challenges",
-    externalLink: "https://coffee-delivery-glsvitoria.vercel.app/",
+    github: "https://github.com/glsvitoria/api-gym-checkin",
   },
   {
     title: "Find Weather",
@@ -171,9 +183,11 @@ export function Portfolio() {
                   <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
                 </svg>
                 <div className="project-links">
-                  <a href={project.github} target="_blank" rel="noreferrer">
+                  {project.github&& (
+                    <a href={project.github} target="_blank" rel="noreferrer">
                     <GithubLogo size={32} color="#FFF" />
                   </a>
+                  )}
                   {project.externalLink && (
                     <a
                       href={project.externalLink}
